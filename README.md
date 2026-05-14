@@ -90,7 +90,6 @@ The site is frontend-only:
 ## Notes
 
 - `welcome.html` is present in the root and is used by auth/logout links.
-- The folder `Resourse sharing & lost-found project/` appears to hold a duplicate copy of the same application plus a `.git/` directory.
 - This is a static prototype; no backend authentication or item persistence is available.
 
 ## Running Locally
