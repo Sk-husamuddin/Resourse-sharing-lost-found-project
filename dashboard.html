@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resource Sharing & Lost Items Dashboard</title>
+    <link href="css/dashboard.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-div">
+            <h2 class="logo-text">🔗 Resource Hub</h2>
+        </div>
+        <div class="right-section"> 
+            <div class="user-info">
+                <span>Welcome User</span>
+                <a href="welcome.html" class="logout-btn">Logout</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <!-- Left Sidebar with Icons -->
+        <aside class="sidebar">
+            <div class="icon-container">
+                <a href="dashboard.html" class="icon-item-link">
+                    <div class="icon-item active">
+                        <img src="assets/shopping-cart.png" alt="Resource Sharing" class="nav-icon">
+                        <span class="icon-label">Resources</span>
+                    </div>
+                </a>
+                <a href="lost-found.html" class="icon-item-link">
+                    <div class="icon-item">
+                        <img src="assets/key.png" alt="Lost & Found" class="nav-icon">
+                        <span class="icon-label">Lost & Found</span>
+                    </div>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Resource Sharing Section -->
+            <div id="resource-sharing" class="content-section active">
+                <div class="content-header">
+                    <h1 class="page-title">Resource Sharing</h1>
+                    <a href="upload-resource.html" class="upload-btn">+ Upload Resource</a>
+                </div>
+                
+                <div class="resource-grid">
+                    <a href="study-materials.html" class="resource-card-link">
+                        <div class="resource-card">
+                            <div class="card-image">
+                                <img src="assets/people.png" alt="Resource">
+                            </div>
+                            <h3>Study Materials</h3>
+                            <p>Share and find study resources</p>
+                        </div>
+                    </a>
+                    <a href="tools-equipment.html" class="resource-card-link">
+                        <div class="resource-card">
+                            <div class="card-image">
+                                <img src="assets/menu-img.png" alt="Resource">
+                            </div>
+                            <h3>Tools & Equipment</h3>
+                            <p>Borrow and lend tools</p>
+                        </div>
+                    </a>
+                    <a href="books-notes.html" class="resource-card-link">
+                        <div class="resource-card">
+                            <div class="card-image">
+                                <img src="assets/shopping-cart.png" alt="Resource">
+                            </div>
+                            <h3>Books & Notes</h3>
+                            <p>Exchange educational materials</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

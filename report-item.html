@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Report Item - Lost & Found Hub</title>
+    <link href="css/report-item.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-div">
+            <h2 class="logo-text">🔗 Resource Hub</h2>
+        </div>
+        <div class="right-section"> 
+            <div class="user-info">
+                <span>Welcome User</span>
+                <a href="welcome.html" class="logout-btn">Logout</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <!-- Left Sidebar with Icons -->
+        <aside class="sidebar">
+            <div class="icon-container">
+                <a href="dashboard.html" class="icon-item-link">
+                    <div class="icon-item">
+                        <img src="assets/shopping-cart.png" alt="Resource Sharing" class="nav-icon">
+                        <span class="icon-label">Resources</span>
+                    </div>
+                </a>
+                <a href="lost-found.html" class="icon-item-link">
+                    <div class="icon-item active">
+                        <img src="assets/key.png" alt="Lost & Found" class="nav-icon">
+                        <span class="icon-label">Lost & Found</span>
+                    </div>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <div class="form-container">
+                <div class="form-header">
+                    <h1 class="form-title">Report Item</h1>
+                    <p class="form-subtitle">Help others find their lost items or report found items</p>
+                </div>
+
+                <form class="report-form" action="lost-found.html">
+                    <div class="form-group">
+                        <label class="form-label">Report Type *</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="report-type" value="lost" required>
+                                <span class="radio-custom"></span>
+                                I Lost Something
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="report-type" value="found" required>
+                                <span class="radio-custom"></span>
+                                I Found Something
+                            </label>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label class="form-label" for="item-name">Item Name *</label>
+                        <input type="text" id="item-name" name="item-name" class="form-input" placeholder="e.g., Wallet, Keys, Phone" required>
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <label class="form-label" for="description">Description *</label>
+                        <textarea id="description" name="description" class="form-input" rows="4" placeholder="Describe the item in detail (color, brand, distinguishing features...)" required></textarea>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label" for="location">Location *</label>
+                            <input type="text" id="location" name="location" class="form-input" placeholder="Where was the item lost/found?" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="date">Date *</label>
+                            <input type="date" id="date" name="date" class="form-input" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="contact">Contact Information *</label>
+                        <input type="text" id="contact" name="contact" class="form-input" placeholder="Email or phone number" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="additional-info">Additional Information</label>
+                        <textarea id="additional-info" name="additional-info" class="form-input" rows="3" placeholder="Any other details that might help..."></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <a href="lost-found.html" class="cancel-btn">Cancel</a>
+                        <button type="submit" class="submit-btn">Submit Report</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

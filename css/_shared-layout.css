@@ -1,0 +1,187 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #e8f5e9 0%, #e3f2fd 100%);
+    min-height: 100vh;
+}
+
+
+/* ── Shared Form Styles (used by report, claim, contact, upload) ── */
+.form-label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 6px;
+    letter-spacing: 0.3px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #d0d7e2;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8fafc;
+    color: #1a1a2e;
+    box-sizing: border-box;
+    transition: border-color 0.25s, background-color 0.25s, box-shadow 0.25s;
+    appearance: none;
+}
+
+.form-input::placeholder {
+    color: #a0aec0;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #4CAF50;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.15);
+}
+
+select.form-input {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%2366788a' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    padding-right: 36px;
+    cursor: pointer;
+}
+
+textarea.form-input {
+    height: auto;
+    resize: vertical;
+}
+
+/* ── Header ── */
+.header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.97);
+    padding: 0 30px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.logo-text {
+    color: #2c3e50;
+    font-size: 22px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-info span {
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+.logout-btn {
+    background-color: #e74c3c;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.25s;
+}
+
+.logout-btn:hover {
+    background-color: #c0392b;
+}
+
+/* ── Layout ── */
+.main-container {
+    display: flex;
+    height: calc(100vh - 70px);
+}
+
+/* ── Sidebar ── */
+.sidebar {
+    width: 100px;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+.icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 12px;
+    transition: all 0.25s;
+    width: 72px;
+    border: 2px solid transparent;
+}
+
+.icon-item:hover {
+    background-color: rgba(76, 175, 80, 0.1);
+}
+
+.icon-item.active {
+    background-color: rgba(76, 175, 80, 0.15);
+    border-color: #4CAF50;
+}
+
+.icon-item-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.icon-item-link:hover .icon-item {
+    background-color: rgba(76, 175, 80, 0.1);
+}
+
+.nav-icon {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+}
+
+.icon-label {
+    font-size: 11px;
+    color: #2c3e50;
+    font-weight: 600;
+    margin-top: 5px;
+    text-align: center;
+}
+
+/* ── Main Content ── */
+.main-content {
+    flex: 1;
+    padding: 40px;
+    overflow-y: auto;
+}

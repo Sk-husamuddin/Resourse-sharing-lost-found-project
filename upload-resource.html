@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Resource - Resource Sharing Hub</title>
+    <link href="css/upload-resource.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-div">
+            <h2 class="logo-text">🔗 Resource Hub</h2>
+        </div>
+        <div class="right-section"> 
+            <div class="user-info">
+                <span>Welcome User</span>
+                <a href="welcome.html" class="logout-btn">Logout</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <!-- Left Sidebar with Icons -->
+        <aside class="sidebar">
+            <div class="icon-container">
+                <a href="dashboard.html" class="icon-item-link">
+                    <div class="icon-item active">
+                        <img src="assets/shopping-cart.png" alt="Resource Sharing" class="nav-icon">
+                        <span class="icon-label">Resources</span>
+                    </div>
+                </a>
+                <a href="lost-found.html" class="icon-item-link">
+                    <div class="icon-item">
+                        <img src="assets/key.png" alt="Lost & Found" class="nav-icon">
+                        <span class="icon-label">Lost & Found</span>
+                    </div>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <div class="form-container">
+                <div class="form-header">
+                    <h1 class="form-title">Upload Resource</h1>
+                    <p class="form-subtitle">Share your resources with the community</p>
+                </div>
+
+                <form class="upload-form" action="dashboard.html">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label" for="resource-name">Resource Name *</label>
+                            <input type="text" id="resource-name" name="resource-name" class="form-input" placeholder="Enter resource name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="category">Category *</label>
+                            <select id="category" name="category" class="form-input" required>
+                                <option value="">Select a category</option>
+                                <option value="study-materials">Study Materials</option>
+                                <option value="tools">Tools & Equipment</option>
+                                <option value="books">Books & Notes</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="description">Description *</label>
+                        <textarea id="description" name="description" class="form-input" rows="4" placeholder="Describe your resource in detail..." required></textarea>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label" for="location">Location *</label>
+                            <input type="text" id="location" name="location" class="form-input" placeholder="Where is the resource available?" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="contact">Contact Information *</label>
+                            <input type="text" id="contact" name="contact" class="form-input" placeholder="Email or phone number" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="availability">Availability</label>
+                        <input type="text" id="availability" name="availability" class="form-input" placeholder="e.g., Weekdays 9AM-5PM">
+                    </div>
+
+                    <div class="form-actions">
+                        <a href="dashboard.html" class="cancel-btn">Cancel</a>
+                        <button type="submit" class="submit-btn">Upload Resource</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

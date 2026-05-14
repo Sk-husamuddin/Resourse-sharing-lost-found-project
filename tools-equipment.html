@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tools & Equipment - Resource Sharing Hub</title>
+    <link href="css/tools-equipment.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-div">
+            <h2 class="logo-text">🔗 Resource Hub</h2>
+        </div>
+        <div class="right-section"> 
+            <div class="user-info">
+                <span>Welcome User</span>
+                <a href="welcome.html" class="logout-btn">Logout</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="sidebar">
+            <div class="icon-container">
+                <a href="dashboard.html" class="icon-item-link">
+                    <div class="icon-item active">
+                        <img src="assets/shopping-cart.png" alt="Resource Sharing" class="nav-icon">
+                        <span class="icon-label">Resources</span>
+                    </div>
+                </a>
+                <a href="lost-found.html" class="icon-item-link">
+                    <div class="icon-item">
+                        <img src="assets/key.png" alt="Lost & Found" class="nav-icon">
+                        <span class="icon-label">Lost & Found</span>
+                    </div>
+                </a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="content-header">
+                <h1 class="page-title">Tools & Equipment</h1>
+                <a href="upload-resource.html" class="upload-btn">+ Upload Resource</a>
+            </div>
+
+            <div class="items-grid" id="itemsGrid">
+                <div class="item-card available" data-name="Laptop Stand">
+                                        <span class="status-badge available">Available</span>
+                                        <div class="item-image"><img src="assets/menu-img.png" alt="Tool"></div>
+                    <div class="item-details">
+                        <h3>Laptop Stand</h3>
+                        <p class="item-description">Adjustable aluminum laptop stand, good for posture and desk setup</p>
+                        <div class="item-meta">
+                            <span class="location">📍 Computer Lab</span>
+                            <span class="date">📅 1 day ago</span>
+                        </div>
+                        <a href="contact-owner.html" class="contact-btn">Contact Owner</a>
+                    </div>
+                </div>
+
+                <div class="item-card available" data-name="Drawing Set">
+                                        <span class="status-badge available">Available</span>
+                                        <div class="item-image"><img src="assets/menu-img.png" alt="Tool"></div>
+                    <div class="item-details">
+                        <h3>Drawing Set</h3>
+                        <p class="item-description">Complete drawing set with compass, protractor, and scales</p>
+                        <div class="item-meta">
+                            <span class="location">📍 Art Room</span>
+                            <span class="date">📅 1 week ago</span>
+                        </div>
+                        <a href="contact-owner.html" class="contact-btn">Contact Owner</a>
+                    </div>
+                </div>
+
+                <div class="item-card available" data-name="Drill Machine">
+                                        <span class="status-badge available">Available</span>
+                                        <div class="item-image"><img src="assets/menu-img.png" alt="Tool"></div>
+                    <div class="item-details">
+                        <h3>Drill Machine</h3>
+                        <p class="item-description">Electric drill machine with bits and accessories</p>
+                        <div class="item-meta">
+                            <span class="location">📍 Workshop</span>
+                            <span class="date">📅 3 days ago</span>
+                        </div>
+                        <a href="contact-owner.html" class="contact-btn">Contact Owner</a>
+                    </div>
+                </div>
+
+                <div class="item-card available" data-name="Soldering Iron">
+                                        <span class="status-badge available">Available</span>
+                                        <div class="item-image"><img src="assets/menu-img.png" alt="Tool"></div>
+                    <div class="item-details">
+                        <h3>Soldering Iron</h3>
+                        <p class="item-description">Temperature controlled soldering iron for electronics projects</p>
+                        <div class="item-meta">
+                            <span class="location">📍 Electronics Lab</span>
+                            <span class="date">📅 2 days ago</span>
+                        </div>
+                        <a href="contact-owner.html" class="contact-btn">Contact Owner</a>
+                    </div>
+                </div>
+
+                <div class="item-card available" data-name="Multimeter">
+                                        <span class="status-badge available">Available</span>
+                                        <div class="item-image"><img src="assets/menu-img.png" alt="Tool"></div>
+                    <div class="item-details">
+                        <h3>Multimeter</h3>
+                        <p class="item-description">Digital multimeter for electrical measurements</p>
+                        <div class="item-meta">
+                            <span class="location">📍 Electrical Lab</span>
+                            <span class="date">📅 4 days ago</span>
+                        </div>
+                        <a href="contact-owner.html" class="contact-btn">Contact Owner</a>
+                    </div>
+                </div>
+
+                <div class="item-card borrowed" data-name="3D Printer">
+                                        <span class="status-badge borrowed">Borrowed</span>
+                                        <div class="item-image"><img src="assets/menu-img.png" alt="Tool"></div>
+                    <div class="item-details">
+                        <h3>3D Printer</h3>
+                        <p class="item-description">Desktop 3D printer for prototyping and projects</p>
+                        <div class="item-meta">
+                            <span class="location">📍 Innovation Lab</span>
+                            <span class="date">📅 5 days ago</span>
+                        </div>
+                        <button class="contact-btn" disabled>Contact Owner</button>
+                    </div>
+                </div>
+            </div>
+            <p id="noResults" class="no-results" style="display:none;">No items match your search.</p>
+        </main>
+    </div>
+
+</body>
+</html>

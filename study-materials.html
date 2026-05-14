@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Study Materials - Resource Sharing Hub</title>
+    <link href="css/study-materials.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-div">
+            <h2 class="logo-text">🔗 Resource Hub</h2>
+        </div>
+        <div class="right-section"> 
+            <div class="user-info">
+                <span>Welcome User</span>
+                <a href="welcome.html" class="logout-btn">Logout</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="sidebar">
+            <div class="icon-container">
+                <a href="dashboard.html" class="icon-item-link">
+                    <div class="icon-item active">
+                        <img src="assets/shopping-cart.png" alt="Resource Sharing" class="nav-icon">
+                        <span class="icon-label">Resources</span>
+                    </div>
+                </a>
+                <a href="lost-found.html" class="icon-item-link">
+                    <div class="icon-item">
+                        <img src="assets/key.png" alt="Lost & Found" class="nav-icon">
+                        <span class="icon-label">Lost & Found</span>
+                    </div>
+                </a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="content-header">
+                <h1 class="page-title">Study Materials</h1>
+                <a href="upload-resource.html" class="upload-btn">+ Upload Resource</a>
+            </div>
+
+            <div class="items-grid" id="itemsGrid">
+                <div class="item-card available" data-name="Engineering Textbooks">
+                                        <span class="status-badge available">Available</span>
+                                        <div class="item-image"><img src="assets/people.png" alt="Study Material"></div>
+                    <div class="item-details">
+                        <h3>Engineering Textbooks</h3>
+                        <p class="item-description">Complete set of 2nd year engineering textbooks including Math, Physics, and Chemistry</p>
+                        <div class="item-meta">
+                            <span class="location">📍 Library Building</span>
+                            <span class="date">📅 2 days ago</span>
+                        </div>
+                        <a href="contact-owner.html" class="contact-btn">Contact Owner</a>
+                    </div>
+                </div>
+
+                <div class="item-card borrowed" data-name="Calculator Scientific">
+                    <span class="status-badge borrowed">Borrowed</span>
+                    <div class="item-image"><img src="assets/people.png" alt="Study Material"></div>
+                    <div class="item-details">
+                        <h3>Calculator Scientific</h3>
+                        <p class="item-description">Casio scientific calculator for engineering calculations</p>
+                        <div class="item-meta">
+                            <span class="location">📍 Student Center</span>
+                            <span class="date">📅 5 days ago</span>
+                        </div>
+                        <button class="contact-btn" disabled>Borrowed</button>
+                    </div>
+                </div>
+
+                <div class="item-card available" data-name="Physics Lab Manual">
+                                        <span class="status-badge available">Available</span>
+                                        <div class="item-image"><img src="assets/people.png" alt="Study Material"></div>
+                    <div class="item-details">
+                        <h3>Physics Lab Manual</h3>
+                        <p class="item-description">Comprehensive physics laboratory manual with experiments and theories</p>
+                        <div class="item-meta">
+                            <span class="location">📍 Physics Lab</span>
+                            <span class="date">📅 1 day ago</span>
+                        </div>
+                        <a href="contact-owner.html" class="contact-btn">Contact Owner</a>
+                    </div>
+                </div>
+
+                <div class="item-card available" data-name="Chemistry Notes">
+                                        <span class="status-badge available">Available</span>
+                                        <div class="item-image"><img src="assets/people.png" alt="Study Material"></div>
+                    <div class="item-details">
+                        <h3>Chemistry Notes</h3>
+                        <p class="item-description">Detailed organic and inorganic chemistry notes with diagrams</p>
+                        <div class="item-meta">
+                            <span class="location">📍 Chemistry Department</span>
+                            <span class="date">📅 3 days ago</span>
+                        </div>
+                        <a href="contact-owner.html" class="contact-btn">Contact Owner</a>
+                    </div>
+                </div>
+
+                <div class="item-card available" data-name="Mathematics Formula Book">
+                                        <span class="status-badge available">Available</span>
+                                        <div class="item-image"><img src="assets/people.png" alt="Study Material"></div>
+                    <div class="item-details">
+                        <h3>Mathematics Formula Book</h3>
+                        <p class="item-description">Collection of all mathematics formulas for engineering</p>
+                        <div class="item-meta">
+                            <span class="location">📍 Mathematics Department</span>
+                            <span class="date">📅 4 days ago</span>
+                        </div>
+                        <a href="contact-owner.html" class="contact-btn">Contact Owner</a>
+                    </div>
+                </div>
+
+                <div class="item-card borrowed" data-name="Biology Textbook">
+                    <span class="status-badge borrowed">Borrowed</span>
+                    <div class="item-image"><img src="assets/people.png" alt="Study Material"></div>
+                    <div class="item-details">
+                        <h3>Biology Textbook</h3>
+                        <p class="item-description">Complete biology textbook with illustrations and diagrams</p>
+                        <div class="item-meta">
+                            <span class="location">📍 Biology Lab</span>
+                            <span class="date">📅 1 week ago</span>
+                        </div>
+                        <button class="contact-btn" disabled>Borrowed</button>
+                    </div>
+                </div>
+            </div>
+            <p id="noResults" class="no-results" style="display:none;">No items match your search.</p>
+        </main>
+    </div>
+
+</body>
+</html>

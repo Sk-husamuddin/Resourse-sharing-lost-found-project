@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Books & Notes - Resource Sharing Hub</title>
+    <link href="css/books-notes.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-div">
+            <h2 class="logo-text">🔗 Resource Hub</h2>
+        </div>
+        <div class="right-section"> 
+            <div class="user-info">
+                <span>Welcome User</span>
+                <a href="welcome.html" class="logout-btn">Logout</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="sidebar">
+            <div class="icon-container">
+                <a href="dashboard.html" class="icon-item-link">
+                    <div class="icon-item active">
+                        <img src="assets/shopping-cart.png" alt="Resource Sharing" class="nav-icon">
+                        <span class="icon-label">Resources</span>
+                    </div>
+                </a>
+                <a href="lost-found.html" class="icon-item-link">
+                    <div class="icon-item">
+                        <img src="assets/key.png" alt="Lost & Found" class="nav-icon">
+                        <span class="icon-label">Lost & Found</span>
+                    </div>
+                </a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="content-header">
+                <h1 class="page-title">Books & Notes</h1>
+                <a href="upload-resource.html" class="upload-btn">+ Upload Resource</a>
+            </div>
+
+            <div class="items-grid" id="itemsGrid">
+                <div class="item-card available" data-name="Programming Notes">
+                                        <span class="status-badge available">Available</span>
+                                        <div class="item-image"><img src="assets/shopping-cart.png" alt="Book"></div>
+                    <div class="item-details">
+                        <h3>Programming Notes</h3>
+                        <p class="item-description">Comprehensive C++ and Java programming notes with examples</p>
+                        <div class="item-meta">
+                            <span class="location">📍 Classroom 201</span>
+                            <span class="date">📅 3 days ago</span>
+                        </div>
+                        <a href="contact-owner.html" class="contact-btn">Contact Owner</a>
+                    </div>
+                </div>
+
+                <div class="item-card available" data-name="Research Papers">
+                                        <span class="status-badge available">Available</span>
+                                        <div class="item-image"><img src="assets/shopping-cart.png" alt="Book"></div>
+                    <div class="item-details">
+                        <h3>Research Papers</h3>
+                        <p class="item-description">Collection of computer science research papers and journals</p>
+                        <div class="item-meta">
+                            <span class="location">📍 Library</span>
+                            <span class="date">📅 4 days ago</span>
+                        </div>
+                        <a href="contact-owner.html" class="contact-btn">Contact Owner</a>
+                    </div>
+                </div>
+
+                <div class="item-card borrowed" data-name="Data Structures Book">
+                    <span class="status-badge borrowed">Borrowed</span>
+                    <div class="item-image"><img src="assets/shopping-cart.png" alt="Book"></div>
+                    <div class="item-details">
+                        <h3>Data Structures Book</h3>
+                        <p class="item-description">Complete guide to data structures and algorithms</p>
+                        <div class="item-meta">
+                            <span class="location">📍 Computer Science Dept</span>
+                            <span class="date">📅 2 days ago</span>
+                        </div>
+                        <button class="contact-btn" disabled>Contact Owner</button>
+                    </div>
+                </div>
+
+                <div class="item-card available" data-name="Engineering Mathematics">
+                                        <span class="status-badge available">Available</span>
+                                        <div class="item-image"><img src="assets/shopping-cart.png" alt="Book"></div>
+                    <div class="item-details">
+                        <h3>Engineering Mathematics</h3>
+                        <p class="item-description">Advanced engineering mathematics with solved examples</p>
+                        <div class="item-meta">
+                            <span class="location">📍 Mathematics Department</span>
+                            <span class="date">📅 1 day ago</span>
+                        </div>
+                        <a href="contact-owner.html" class="contact-btn">Contact Owner</a>
+                    </div>
+                </div>
+
+                <div class="item-card available" data-name="Digital Electronics Notes">
+                                        <span class="status-badge available">Available</span>
+                                        <div class="item-image"><img src="assets/shopping-cart.png" alt="Book"></div>
+                    <div class="item-details">
+                        <h3>Digital Electronics Notes</h3>
+                        <p class="item-description">Complete digital electronics notes with circuit diagrams</p>
+                        <div class="item-meta">
+                            <span class="location">📍 Electronics Lab</span>
+                            <span class="date">📅 5 days ago</span>
+                        </div>
+                        <a href="contact-owner.html" class="contact-btn">Contact Owner</a>
+                    </div>
+                </div>
+
+                <div class="item-card borrowed" data-name="Web Development Guide">
+                    <span class="status-badge borrowed">Borrowed</span>
+                    <div class="item-image"><img src="assets/shopping-cart.png" alt="Book"></div>
+                    <div class="item-details">
+                        <h3>Web Development Guide</h3>
+                        <p class="item-description">Full stack web development tutorial with projects</p>
+                        <div class="item-meta">
+                            <span class="location">📍 IT Department</span>
+                            <span class="date">📅 1 week ago</span>
+                        </div>
+                        <button class="contact-btn" disabled>Contact Owner</button>
+                    </div>
+                </div>
+            </div>
+            <p id="noResults" class="no-results" style="display:none;">No items match your search.</p>
+        </main>
+    </div>
+
+</body>
+</html>

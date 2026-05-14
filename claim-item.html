@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Claim Item - Resource Sharing Hub</title>
+    <link href="css/claim-item.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-div">
+            <h2 class="logo-text">🔗 Resource Hub</h2>
+        </div>
+        <div class="right-section"> 
+            <div class="user-info">
+                <span>Welcome User</span>
+                <a href="welcome.html" class="logout-btn">Logout</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <!-- Left Sidebar with Icons -->
+        <aside class="sidebar">
+            <div class="icon-container">
+                <a href="dashboard.html" class="icon-item-link">
+                    <div class="icon-item">
+                        <img src="assets/shopping-cart.png" alt="Resource Sharing" class="nav-icon">
+                        <span class="icon-label">Resources</span>
+                    </div>
+                </a>
+                <a href="lost-found.html" class="icon-item-link">
+                    <div class="icon-item active">
+                        <img src="assets/key.png" alt="Lost & Found" class="nav-icon">
+                        <span class="icon-label">Lost & Found</span>
+                    </div>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <div class="claim-container">
+                <div class="claim-header">
+                    <h1 class="claim-title">Claim Found Item</h1>
+                    <p class="claim-subtitle">Provide details to verify your ownership of this found item</p>
+                </div>
+
+                
+                <!-- Claim Form -->
+                <div class="claim-form-container">
+                    <form class="claim-form" action="lost-found.html">
+                        <div class="form-group">
+                            <label class="form-label" for="your-name">Your Full Name *</label>
+                            <input type="text" id="your-name" name="your-name" class="form-input" placeholder="Enter your full name as shown on ID" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="your-email">Your Email *</label>
+                            <input type="email" id="your-email" name="your-email" class="form-input" placeholder="your.email@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="your-phone">Your Phone Number *</label>
+                            <input type="tel" id="your-phone" name="your-phone" class="form-input" placeholder="+91 98765 43210" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="student-id">Student ID / Employee ID *</label>
+                            <input type="text" id="student-id" name="student-id" class="form-input" placeholder="Enter your official ID number" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="department">Department *</label>
+                            <select id="department" name="department" class="form-input" required>
+                                <option value="">Select your department</option>
+                                <option value="computer-science">Computer Science</option>
+                                <option value="electronics">Electronics</option>
+                                <option value="mechanical">Mechanical</option>
+                                <option value="civil">Civil</option>
+                                <option value="electrical">Electrical</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="item-description">Item Description *</label>
+                            <textarea id="item-description" name="description" class="form-input" rows="4" placeholder="Please describe the item in detail (color, brand, distinguishing features, when and where you lost it...)" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="proof">Proof of Ownership *</label>
+                            <textarea id="proof" name="proof" class="form-input" rows="3" placeholder="Provide specific details that only the owner would know (e.g., ID number, specific marks, contents of wallet, etc.)" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="pickup-time">Preferred Pickup Time</label>
+                            <select id="pickup-time" name="pickup-time" class="form-input">
+                                <option value="">Select preferred time</option>
+                                <option value="morning">Morning (9AM - 12PM)</option>
+                                <option value="afternoon">Afternoon (12PM - 4PM)</option>
+                                <option value="evening">Evening (4PM - 6PM)</option>
+                                <option value="flexible">Flexible</option>
+                            </select>
+                        </div>
+
+                        <div class="verification-checkbox">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="verification" required>
+                                <span class="checkmark"></span>
+                                I certify that I am the rightful owner of this item and understand that false claims may result in disciplinary action.
+                            </label>
+                        </div>
+
+                        <div class="form-actions">
+                            <a href="lost-found.html" class="cancel-btn">Go Back</a>
+                            <button type="submit" class="submit-btn">Submit Claim</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
